@@ -7,7 +7,7 @@ Example usage:
 
 ```console
 $ docker pull uphoffc/tandem-env
-$ docker run -it -v $(pwd):/home uphoffc/tandem-env
+$ docker run -it -v $(pwd):/home -u $(id -u):$(id -g) uphoffc/tandem-env
 # git clone https://github.com/TEAR-ERC/tandem.git
 # cd tandem/
 # git submodule update --init
